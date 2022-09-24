@@ -3,8 +3,6 @@ import './CSS/App.css';
 import RecipeList from './Components/RecipeList';
 
 function App() {
-  const [recipes, setRecipes] = useState(sampleRecipes)
-
   const sampleRecipes =[
     {id:1,
     name:'Chicken',
@@ -43,6 +41,9 @@ function App() {
       ]
       }
   ]
+  const [recipes, setRecipes] = useState(sampleRecipes)
+
+  
   return (
     <div className="App">
       <RecipeList recipes={recipes}/>
